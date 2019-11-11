@@ -1,0 +1,174 @@
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-webkit-transition:background .2s ;
+	-moz-transition:background .2s ;
+	-o-transition:background .2s ;
+	transition:background .2s ;
+}
+
+body{
+	background:#041e2b;
+	color:#fff;
+	
+}
+
+.container{
+	max-width: 700px;
+	margin:0 auto;
+	position: relative;
+}
+h1{
+	text-align: center;
+}
+.add-task{
+	height: 40px;
+}
+.add-task input{
+	width: 84%;
+	height: 40px;
+	margin-right:1%;
+	border:0;
+	display: block;
+	float:left;
+	padding:10px;
+	background: rgba(255,255,255,.8);
+}
+.add-task input:hover,
+.add-task input:focus{
+	background: #fff;
+}
+.add-task button{
+	width: 15%;
+	height: 40px;
+	border:0;
+	display: block;
+	float:right;
+	background: #2196f3;
+}
+
+.task-list{
+	margin:10px 0;
+}
+
+.task-list .task-list-item{
+	height: 40px;
+	width: 100%;
+	background: #fff;
+	color:#333;
+	margin-bottom:5px;
+	line-height: 40px;
+	padding:0 10px;
+}
+
+.task-list .task-list-item:hover,
+.task-list .task-list-item:focus{
+	background: rgba(255,255,255,.8)
+}
+
+.add-task input,
+.add-task button,
+.task-list .task-list-item,
+.task-detail,
+.task-detail .detail-desc,
+.task-detail button
+{
+	border-radius: 3px;
+}
+
+.task-detail-mask{
+	position: fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background:rgba(0,0,0,.4);
+	display: none;
+}
+
+.task-detail{
+	width: 50%;
+	background: #fff;
+	color:#333;
+	position: absolute;
+	bottom:0;
+	right:0;
+	padding:0 10px;
+	border-radius:3px 0 0 3px;
+	display: none;
+}
+
+.task-detail .detail-title{
+	height: 40px;
+	/* background-color: red; */
+	line-height: 40px;
+	padding-left:10px;
+	font-weight:900;
+}
+
+.task-detail .detail-desc{
+	width: 100%;
+	min-height:100px;
+	background:rgba(0,0,0,.2);
+	margin-bottom:10px;
+}
+
+.task-detail button{
+	display: block;
+	background: #2196f3;
+	border:0;
+	width: 100px;
+	height: 40px;
+	margin:10px 0;
+}
+
+.action{
+	float:right;
+}
+
+.action .delete{
+	margin-right:10px;
+	cursor: pointer;	
+}
+.action .detail{
+	cursor:pointer;
+}
+
+
+.task-list-item input{
+	margin-right:10px;
+}
+
+.task-list-item.complete{
+	
+	color:#aaa;
+	opacity: .4;
+	position: relative;
+}
+.task-list-item.complete:after{
+	content:"";
+	height: 1px;	
+	width: 96%;
+	position: absolute;
+	top:18px;
+	right:0;
+	background:#333;
+}
+
+.remind{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #ffeb3b;
+	text-align: center;
+	color:#000;
+	font-size:20px;
+	display:none;
+}
+.remind button{
+	margin-left:10px;
+	font-size: 18px;
+
+}
